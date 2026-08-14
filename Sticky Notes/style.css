@@ -26,6 +26,9 @@ h1 {
     align-content:normal;  
     font-family: 'Brush Script MT', 'Brush Script Std', cursive;
     z-index: 9998;
+    text-shadow:
+    -1px -1px 0 white,  1px -1px 0 white, -1px 1px 0 white,  1px 1px 0 white,
+    -1px  0px 0 white,  1px  0px 0 white,  0px 1px 0 white,  0px -1px 0 white;
 }
 
 .text-on-board {
