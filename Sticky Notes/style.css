@@ -1,0 +1,125 @@
+body {
+  z-index: 9998 !important;
+    text-align: center;
+    background-image: url("BG.png");
+    background-size: cover;
+    background-position: center;
+    font-family: 'Brush Script MT', 'Brush Script Std', cursive; 
+}
+h1 {
+    font-family:'Times New Roman', Times, serif;
+
+
+
+}
+.navbar {
+  opacity: 100%;
+    position: absolute;
+    top: 0;
+    margin: 20px;
+    a:before {
+    content: " "; 
+    display: inline-block; 
+    width: 32px;
+    }
+    text-align:left;
+    align-content:normal;  
+    font-family: 'Brush Script MT', 'Brush Script Std', cursive;
+    z-index: 9998;
+}
+
+.text-on-board {
+  position: absolute;
+  color: blue;
+  font: 'Permanent Marker', 'Playpen Sans';
+  font-weight: bold;
+  font-size: 50px;
+  text-shadow:
+    -1px -1px 0 white,  1px -1px 0 white, -1px 1px 0 white,  1px 1px 0 white,
+    -1px  0px 0 white,  1px  0px 0 white,  0px 1px 0 white,  0px -1px 0 white;
+}
+.sticky-board {
+  position: relative;
+  width: 1440px;
+  height: 100vh;
+  margin: 0 auto;
+  background-image: url(https://plus.unsplash.com/premium_photo-1756717272118-6668f17b13fe?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  overflow: hidden; 
+  opacity: 100%;
+}
+
+.sticky-note {
+  opacity: 100%;
+  position: absolute; 
+  
+  width: 300px;
+  height: 300px;
+  
+  background-image: url('Sticky Note-Fixed.png');
+  background-color: transparent;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+  padding: 35px 50px 25px 50px; 
+  box-sizing: border-box;
+  display: flex;
+  padding-top: 90px;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-size: 16px;
+  color: #333;
+  
+  transition: transform 0.2s ease-in-out;
+  transform-origin: center center;
+    
+  filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.1));
+  
+}
+
+.sticky-note:hover {
+  transform: scale(1.2) rotate(0deg) !important;
+  z-index: 9999 !important; 
+  cursor: pointer;
+  filter: drop-shadow(0px 10px 20px rgba(20, 200, 50, 0.3));
+}
+
+/*.sticky-note:focus {
+  top: 50% !important;
+  left: 50% !important;
+}*/
+
+
+.board-title {
+  position: absolute;
+  transform: translateX(-50%);
+  z-index: 9998;
+  font-size: xx-large;
+  font-weight: bold;
+  color: white;
+  text-shadow:
+    -2px -2px 0 black,  2px -2px 0 black, -2px 2px 0 black,  2px 2px 0 black,
+    -2px  0px 0 black,  2px  0px 0 black,  0px 2px 0 black,  0px -2px 0 black;
+}
+
+.dont-worry-about-it {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: #85573e;
+}
+
+.sticky-note-heading {
+  color: blue;
+  text-wrap: nowrap;
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: x-large;
+  text-shadow:
+    -1px -1px 0 gray,  1px -1px 0 gray, -1px 1px 0 gray,  1px 1px 0 gray,
+    -1px  0px 0 gray,  1px  0px 0 gray,  0px 1px 0 gray,  0px -1px 0 gray;
+}
